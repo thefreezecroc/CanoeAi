@@ -58,11 +58,6 @@ void loop() {
         IMU.readAcceleration(accX, accY, accZ);
         IMU.readMagneticField(magX, magY, magZ);
         IMU.readGyroscope(gyroX, gyroY, gyroZ); 
-
-        gyroX *= PI / 180;
-        gyroY *= PI / 180;
-        gyroZ *= PI / 180;
-
        
         accX *= 9.81;
         accY *= 9.81;
