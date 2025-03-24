@@ -59,11 +59,7 @@ void loop() {
         IMU.readMagneticField(magX, magY, magZ);
         IMU.readGyroscope(gyroX, gyroY, gyroZ); 
        
-        accX *= 9.81;
-        accY *= 9.81;
         accZ -= 1;
-        accZ *= 9.81;
-
 
         // Create a byte buffer to hold the binary data
         uint8_t imuData[36];
