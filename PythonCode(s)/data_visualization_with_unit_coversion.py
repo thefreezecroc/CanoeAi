@@ -14,9 +14,9 @@ def plot_imu_data():
     fig, axs = plt.subplots(3, 1, figsize=(10, 8))
 
     # Acceleration data
-    axs[0].plot(df['Timestamp'], df['accX'], label='accX', color='r')
-    axs[0].plot(df['Timestamp'], df['accY'], label='accY', color='g')
-    axs[0].plot(df['Timestamp'], df['accZ'], label='accZ', color='b')
+    axs[0].plot(df['Timestamp'], df['accX'] * 9.81, label='accX', color='r')
+    axs[0].plot(df['Timestamp'], df['accY'] * 9.81, label='accY', color='g')
+    axs[0].plot(df['Timestamp'], df['accZ'] * 9.81, label='accZ', color='b')
     axs[0].set_title('Accelerometer Data')
     axs[0].set_ylabel('Acceleration (m/s^2)')
     axs[0].legend(loc='upper right')
