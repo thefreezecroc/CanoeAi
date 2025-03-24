@@ -30,9 +30,9 @@ def plot_imu_data():
     axs[1].legend(loc='upper right')
 
     # Gyroscope data
-    axs[2].plot(df['Timestamp'], df['gyroX'] * (math.pi / 180), label='gyroX', color='r')
-    axs[2].plot(df['Timestamp'], df['gyroY'] * (math.pi / 180), label='gyroY', color='g')
-    axs[2].plot(df['Timestamp'], df['gyroZ'] * (math.pi / 180), label='gyroZ', color='b')
+    axs[2].plot(df['Timestamp'], df['gyroX'], label='gyroX', color='r')
+    axs[2].plot(df['Timestamp'], df['gyroY'], label='gyroY', color='g')
+    axs[2].plot(df['Timestamp'], df['gyroZ'], label='gyroZ', color='b')
     axs[2].set_title('Gyroscope Data')
     axs[2].set_ylabel('Gyroscope (rad/s)')
     axs[2].legend(loc='upper right')
