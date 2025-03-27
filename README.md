@@ -10,8 +10,7 @@ CanoeAi is a project designed to collect and analyze data from sensors placed in
 - Python scripts for data processing
 
 ## Requirements
-- Arduino Nano 33 BLE
-- IMU Sensor
+- Arduino Nano 33 BLE with built in IMU sensor
 - Python 3.x
 
 ## Installation
