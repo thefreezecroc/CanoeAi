@@ -2,7 +2,7 @@
 
 ![Image](https://github.com/user-attachments/assets/a45f8860-4d18-43a5-86e5-a9b523071f4e)
 
-CanoeAi is a project designed to collect and analyze data from sensors placed in a canoe paddle to understand movement dynamics. The system uses Arduino Nano 33 BLE and IMU sensors to gather motion data, which is processed using Python scripts.
+CanoeAi is a project designed to collect and analyze data from sensors placed in a canoe paddle to understand movement dynamics. The system uses Arduino Nano 33 BLE and IMU sensors to gather motion data, which is processed using Python scripts. Later we will use machine learning algorithms to process the data, and give feedback to the user.
 
 ## Features
 - Data collection using IMU sensors
