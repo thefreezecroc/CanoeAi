@@ -1,8 +1,8 @@
-# CanoeAi
+# CanoeAI
 
 ![CanoeAi](https://github.com/user-attachments/assets/a45f8860-4d18-43a5-86e5-a9b523071f4e)
 
-CanoeAi is a project designed to collect and analyze data from sensors placed in a canoe paddle to understand movement dynamics. The system uses Arduino Nano 33 BLE and IMU sensors to gather motion data, which is processed using Python scripts. Later, we will use machine learning algorithms to process the data and provide feedback to the user.
+CanoeAI is a project designed to collect and analyze data from sensors placed in a canoe paddle to understand movement dynamics. The system uses Arduino Nano 33 BLE and IMU sensors to gather motion data, which is processed using Python scripts. Later, we will use machine learning algorithms to process the data and provide feedback to the user.
 
 ## Features
 - Data collection using IMU sensors
@@ -34,9 +34,9 @@ git clone https://github.com/thefreezecroc/CanoeAi
 
 ---
 
-## CanoeAi (Magyar)
+## CanoeAI (Magyar)
 
-CanoeAi egy projekt, amelynek célja, hogy érzékelőkkel gyűjtött adatokat elemezzen egy kenu evezőben, hogy jobban megértsük a mozgásdinamikát. A rendszer Arduino Nano 33 BLE és IMU szenzorokat használ a mozgási adatok rögzítésére, amelyeket Python szkriptek dolgoznak fel. Később gépi tanulási algoritmusokat alkalmazunk az adatok elemzésére és a felhasználók visszajelzésére.
+CanoeAI egy projekt, amelynek célja, hogy érzékelőkkel gyűjtött adatokat elemezzen egy kenu evezőben, hogy jobban megértsük a mozgásdinamikát. A rendszer Arduino Nano 33 BLE és IMU szenzorokat használ a mozgási adatok rögzítésére, amelyeket Python szkriptek dolgoznak fel. Később gépi tanulási algoritmusokat alkalmazunk az adatok elemzésére és a felhasználók visszajelzésére.
 
 ## Funkciók
 - Adatgyűjtés IMU szenzorokkal
