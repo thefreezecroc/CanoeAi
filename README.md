@@ -1,7 +1,8 @@
-CanoeAI – Smart Technique Feedback System for Canoeing
+
 
 ![CanoeAi](https://github.com/user-attachments/assets/a45f8860-4d18-43a5-86e5-a9b523071f4e)
 
+CanoeAI – Smart Technique Feedback System for Canoeing
 CanoeAI is an innovative training support tool for sprint canoe athletes. It helps improve paddling technique by collecting movement data, analyzing it with machine learning, and providing real-time feedback using vibration.
 
 📌 Project Summary
