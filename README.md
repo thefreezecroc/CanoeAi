@@ -63,7 +63,7 @@ Deployed directly on the Arduino via TensorFlow Lite
 🛠️ Future Plans
 Mobile app with Bluetooth connection
 
-Speed and force sensors
+Speed and force sensors add
 
 Full statistical analysis of training sessions
 
@@ -146,7 +146,7 @@ Telepítés: közvetlenül az Arduino-n, TensorFlow Lite segítségével
 🛠️ Jövőbeli tervek
 Mobilalkalmazás Bluetooth kapcsolattal
 
-Sebesség- és erőmérő szenzorok
+Sebesség- és erőmérő szenzorok hozzáadása
 
 Teljes edzésanalízis statisztikákkal
 
