@@ -143,14 +143,14 @@ Kimenet: valós idejű visszajelzés
 
 Telepítés: közvetlenül az Arduino-n, TensorFlow Lite segítségével
 
-🛠️ Jövőbeli tervek
+🛠️ Jövőbeli tervek:
 Mobilalkalmazás Bluetooth kapcsolattal
 
 Sebesség- és erőmérő szenzorok hozzáadása
 
 Teljes edzésanalízis statisztikákkal
 
-🧑‍🔬 Szakértői visszajelzések
+🧑‍🔬 Szakértői visszajelzések:
 „Nagyon hasznos, ha a tanítvány azonnali visszajelzést kap a hibás mozdulatról.”
 — Vas György, edző
 
@@ -163,6 +163,6 @@ Teljes edzésanalízis statisztikákkal
 „Akár észrevehetetlen hibák is befolyásolhatják az eredményt – ez az eszköz segíthet ezeket kiszűrni.”
 — Lugosi Gergely István, világbajnok kenus
 
-🔗 GitHub
+🔗 GitHub:
 A projekt forráskódja és modellje elérhető:
 https://github.com/thefreezecroc/CanoeAi
