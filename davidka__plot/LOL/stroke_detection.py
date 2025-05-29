@@ -8,7 +8,7 @@ import pandas as pd
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-from app.routes import update_score  # 👈 Import Flask updater
+from app.routes import update_score, latest_score  # 👈 Import Flask updater
 
 BLE_DEVICE_ADDRESS = "A3:5A:EF:D7:43:39"
 CHARACTERISTIC_UUID = "87654321-4321-4321-4321-cba987654321"
@@ -86,9 +86,7 @@ def evaluate_stroke(stroke_data):
 
     prediction = model.predict(padded, verbose=0)
     quality = prediction[0][0]
-    print(f"✅ Stroke quality score: {quality:.2f}")
-    print("👍 Good stroke" if quality > 0.5 else "👎 Bad stroke")
-    update_score(quality)  # 👈 Update Flask state
+    latest_score = update_score(quality)  # 👈 Update Flask state
 
 async def run_ble():
     async with BleakClient(BLE_DEVICE_ADDRESS) as client:

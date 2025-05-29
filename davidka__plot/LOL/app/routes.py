@@ -15,5 +15,9 @@ def get_score():
 
 # Call this function from your BLE handler after evaluating stroke
 def update_score(new_score):
-    latest_score["quality"] = round(new_score, 2)
-    latest_score["status"] = "👍 Good stroke" if new_score > 0.5 else "👎 Bad stroke"
+    temp = {"quality": None, "status": "Update FAILED!"}
+    temp["quality"] = round(new_score, 2)
+    temp["status"] = "👍 Good stroke" if new_score > 0.5 else "👎 Bad stroke"
+    print(f"✅ Stroke quality score: {new_score:.2f}")
+    print("👍 Good stroke" if new_score > 0.5 else "👎 Bad stroke")
+    return temp
