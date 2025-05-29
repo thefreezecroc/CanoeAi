@@ -8,7 +8,7 @@ import pandas as pd
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-from app.routes import update_score, latest_score  # 👈 Import Flask updater
+from app.routes import update_score
 
 BLE_DEVICE_ADDRESS = "A3:5A:EF:D7:43:39"
 CHARACTERISTIC_UUID = "87654321-4321-4321-4321-cba987654321"
