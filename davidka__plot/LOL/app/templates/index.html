@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stroke Quality Monitor</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Stroke Quality Monitor</h1>
+    <p><strong>Latest Score:</strong> <span id="score">Loading...</span></p>
+    <p><strong>Status:</strong> <span id="status">Loading...</span></p>
+
+    <script>
+        async function fetchScore() {
+            const res = await fetch("/get_score");
+            const data = await res.json();
+            document.getElementById("score").textContent = data.quality !== null ? data.quality : "No score yet";
+            document.getElementById("status").textContent = data.status;
+        }
+
+        setInterval(fetchScore, 1000);  // Refresh every second
+        fetchScore();  // Initial load
+    </script>
+</body>
+</html>
