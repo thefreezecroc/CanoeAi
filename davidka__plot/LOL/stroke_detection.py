@@ -13,7 +13,7 @@ from app.routes import update_score  # 👈 Import Flask updater
 BLE_DEVICE_ADDRESS = "A3:5A:EF:D7:43:39"
 CHARACTERISTIC_UUID = "87654321-4321-4321-4321-cba987654321"
 MODEL_PATH = "stroke_modelp3_9_21.h5"
-MAX_SEQUENCE_LENGTH = 100
+MAX_SEQUENCE_LENGTH = 71
 
 model = load_model(MODEL_PATH)
 
