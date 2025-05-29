@@ -1,23 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Stroke Quality Monitor</title>
     <meta charset="UTF-8">
+    <title>Stroke Quality Monitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .score-box {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .value {
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Stroke Quality Monitor</h1>
-    <p><strong>Latest Score:</strong> <span id="score">Loading...</span></p>
-    <p><strong>Status:</strong> <span id="status">Loading...</span></p>
+    <h1>🏊‍♂️ Stroke Quality Monitor</h1>
+
+    <div class="score-box">
+        <p><span class="label">Latest Score:</span><span id="score" class="value">Loading...</span></p>
+        <p><span class="label">Status:</span><span id="status" class="value">Loading...</span></p>
+    </div>
 
     <script>
         async function fetchScore() {
-            const res = await fetch("/get_score");
-            const data = await res.json();
-            document.getElementById("score").textContent = data.quality !== null ? data.quality : "No score yet";
-            document.getElementById("status").textContent = data.status;
+            try {
+                const res = await fetch("/get_score");
+                const data = await res.json();
+                document.getElementById("score").textContent = data.quality !== null ? data.quality : "No score yet";
+                document.getElementById("status").textContent = data.status || "Unknown";
+                console.log(data);
+            } catch (error) {
+                console.error("Failed to fetch score:", error);
+                document.getElementById("status").textContent = "❌ Connection error";
+            }
         }
 
-        setInterval(fetchScore, 1000);  // Refresh every second
+        setInterval(fetchScore, 100);  // Refresh every second
         fetchScore();  // Initial load
     </script>
 </body>
