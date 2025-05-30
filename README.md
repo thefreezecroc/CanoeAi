@@ -166,3 +166,9 @@ Teljes edzésanalízis statisztikákkal
 🔗 GitHub:
 A projekt forráskódja és modellje elérhető:
 https://github.com/thefreezecroc/CanoeAi
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+
